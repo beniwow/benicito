@@ -1,0 +1,84 @@
+<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encargar Pedido</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+       margin: 0;
+      padding: 0;
+      background-color: #fffdf9;
+
+    }
+
+    header {
+      background-color: #fffdf9;
+      color:;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: fffdf9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #d4af37;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1b4f72;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Encargar Pedido</h1>
+    <p>Rellena el formulario para encargar tus productos</p>
+<a href="productobeni.html">Ver nuestros productos</a>
+  </header>
+
+  <div class="form-container">
+    <form action="https://formspree.io/f/meokaawv" method="POST">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono" required>
+
+      <label for="producto">Producto(s) a encargar:</label>
+      <textarea id="producto" name="producto" rows="4" required></textarea>
+
+      <label for="direccion">Dirección de entrega:</label>
+      <textarea id="direccion" name="direccion" rows="3" required></textarea>
+
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </div>
+
+</body>
+</html>

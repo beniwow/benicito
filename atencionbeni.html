@@ -1,0 +1,149 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atención al Cliente | Benicito Peluches</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdf9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #800020; /* Guinda */
+      color: #d4af37; /* Dorado */
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #800020; /* Guinda */
+    }
+
+    .info-section, .form-section {
+      margin-bottom: 40px;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #d4af37; /* Dorado */
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #d4af37; /* Dorado */
+      color: #800020; /* Guinda */
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #b38e22; /* Dorado más oscuro */
+      color: white;
+    }
+
+    footer {
+      background-color: #800020; /* Guinda */
+      color: #d4af37; /* Dorado */
+      text-align: center;
+      padding: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #d4af37; /* Dorado */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Benicito Peluches</h1>
+    <p>Atención al Cliente</p>
+  </header>
+
+  <main>
+    <section class="info-section">
+      <h2>¿En qué podemos ayudarte?</h2>
+      <p>En Benicito nos encanta escucharte. Si tienes preguntas sobre tus pedidos, envíos o necesitas asistencia personalizada, estamos aquí para ti.</p>
+      <h3>Horario de atención:</h3>
+      <ul>
+        <li>Lunes a Viernes: 9:00 am – 6:00 pm</li>
+        <li>Sábados: 10:00 am – 2:00 pm</li>
+        <li>Domingos y feriados: Cerrado</li>
+      </ul>
+    </section>
+
+    <section class="form-section">
+      <h2>Contáctanos</h2>
+      <form action="https://formspree.io/f/mdkwzwyg" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required />
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <textarea name="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+        
+        <!-- Opcional: asunto del correo -->
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de Benicito Peluches">
+        
+        <!-- Opcional: redirigir a página de gracias -->
+        <input type="hidden" name="_next" value="https://tuweb.com/gracias.html">
+        
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section class="info-section">
+      <h2>Información de contacto</h2>
+      <p><strong>Email:</strong> contacto@benicitopeluches.com</p>
+      <p><strong>Teléfono:</strong> +52 55 1234 5678</p>
+      <p><strong>Redes sociales:</strong></p>
+      <div class="social-links">
+        <a href="#">Instagram</a> | 
+        <a href="#">Facebook</a> | 
+        <a href="#">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Benicito Peluches. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

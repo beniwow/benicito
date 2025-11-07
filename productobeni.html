@@ -1,0 +1,154 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peluches Exclusivos | Benicito</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdf9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #800020; /* Guinda */
+      color: #d4af37; /* Dorado */
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+      border: 2px solid #d4af37; /* Dorado */
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #800020; /* Guinda */
+    }
+
+    .price {
+      color: #d4af37; /* Dorado */
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .description {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    footer {
+      background-color: #800020; /* Guinda */
+      color: #d4af37; /* Dorado */
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Benicito</h1>
+    <p>El amigo de peluche que siempre te acompaña</p>
+  </header>
+
+  <main>
+    <h2 style="text-align:center; color:#800020;">Colección Destacada</h2>
+    <section class="productos">
+      <div class="card">
+        <img src="benito1.JPG" alt="Peluchito clásico">
+        <div class="card-content">
+          <h3>Benicito Clásico</h3>
+          <div class="price">$499</div>
+          <p class="description">Un diseño original, suave y tierno. Perfecto para regalar o abrazar.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="benito2.JPG" alt="Benicito edición especial">
+        <div class="card-content">
+          <h3>Benicito Aventurero</h3>
+          <div class="price">$529</div>
+          <p class="description">El compañero ideal para tus momentos divertidos y especiales.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="benito3.JPG" alt="Benicito elegante">
+        <div class="card-content">
+          <h3>Benicito Elegancia</h3>
+          <div class="price">$490</div>
+          <p class="description">Un peluche minimalista con un toque único de estilo.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="benito4.JPG" alt="Benicito corazón">
+        <div class="card-content">
+          <h3>Benicito Corazón</h3>
+          <div class="price">$399</div>
+          <p class="description">Con detalles amorosos, ideal para expresar cariño en cualquier ocasión.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="benito5.JPG" alt="Benicito edición limitada">
+        <div class="card-content">
+          <h3>Benicito Especial</h3>
+          <div class="price">$599</div>
+          <p class="description">Edición limitada con acabados únicos. Un recuerdo que atesorarás.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Benicito Peluches. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
